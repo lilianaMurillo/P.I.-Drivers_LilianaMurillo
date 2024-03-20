@@ -10,7 +10,6 @@ const server = express();
 server.use(morgan("dev")); // aquí le decimos que se va a usar morgan en modo dev. Esto es para que muestre en consola las peticiones que se hacen al servidor.
 server.use(express.json());
 server.use(cors());
-
-server.use(router);
+server.use(router); // aquí le decimos que use el router que definimos en el archivo routes/index.js
 
 module.exports = server;
