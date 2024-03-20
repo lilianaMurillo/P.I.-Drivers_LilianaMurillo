@@ -1,0 +1,55 @@
+body {
+  background-image: url("../../assets/Ayrton-Senna-landing-page-3.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  width: 220px;
+  height: 100px;
+
+  background: linear-gradient(to bottom, #ff0000, #410000);
+  border: solid;
+  text-align: center;
+
+  border-color: black;
+  color: rgb(210, 200, 200);
+  font-family: var(--primary-fon);
+  font-size: 30px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.762);
+  transition: background-color 200ms, box-shadow 300ms;
+  bottom: 20px;
+  left: 20px;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7);
+
+  transition: 200ms;
+}
+
+.btn-home-link {
+  display: flex;
+  position: bottom;
+  font-family: var(--primary-font);
+  top: 42px;
+  left: 80%;
+}

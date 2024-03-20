@@ -4,14 +4,9 @@ se definen las rutas con los métodos HTTP que se necesiten.
 Luego se exporta el router para que pueda ser utilizado en el archivo server.js.*/
 
 const { Router } = require("express");
-//Importar todos los routers;
-//Ejemplo: const authRouter = require('./auth.js');
-const driverRouters = require("./driverRouters");
+const driverRouters = require("./driverRoutes");
 const teamRouters = require("./teamRouters");
-
 const router = Router();
-// Configurar los routers
-// Ejemplo: router.use('/auth', authRouter);
 
 router.use("/drivers", driverRouters);
 router.use("/teams", teamRouters);
